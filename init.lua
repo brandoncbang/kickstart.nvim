@@ -12,6 +12,9 @@ vim.g.have_nerd_font = true
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
 
+-- Disable wrapping
+vim.opt.wrap = false
+
 -- Make line numbers default
 vim.opt.number = true
 -- You can also add relative line numbers, to help with jumping.
@@ -531,6 +534,7 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         ts_ls = {},
         --
+        -- phpactor = {},
 
         lua_ls = {
           -- cmd = {...},
@@ -760,7 +764,19 @@ require('lazy').setup({
     name = 'catppuccin',
     priority = 1000,
     init = function()
-      vim.cmd.colorscheme 'catppuccin-frappe'
+      -- vim.cmd.colorscheme 'catppuccin-frappe'
+    end,
+  },
+  {
+    'sainnhe/everforest',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      -- Optionally configure and load the colorscheme
+      -- directly inside the plugin declaration.
+      -- vim.g.everforest_enable_italic = true
+      vim.cmd.colorscheme 'everforest'
+      vim.opt.background = 'light'
     end,
   },
 
