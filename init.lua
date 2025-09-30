@@ -860,7 +860,7 @@ require('lazy').setup({
     name = 'catppuccin',
     priority = 1000,
     init = function()
-    -- vim.cmd.colorscheme 'catppuccin-frappe'
+      vim.cmd.colorscheme 'catppuccin-mocha'
     end,
   },
   {
@@ -868,12 +868,12 @@ require('lazy').setup({
     lazy = false,
     priority = 1000,
     config = function()
-    -- Optionally configure and load the colorscheme
-    -- directly inside the plugin declaration.
-    -- vim.g.everforest_enable_italic = true
-    vim.g.everforest_background = 'hard'
-    vim.cmd.colorscheme 'everforest'
-    vim.o.background = 'light'
+      -- Optionally configure and load the colorscheme
+      -- directly inside the plugin declaration.
+      -- vim.g.everforest_enable_italic = true
+      -- vim.g.everforest_background = 'hard'
+      -- vim.cmd.colorscheme 'everforest'
+      -- vim.o.background = 'light'
     end,
   },
 
