@@ -640,6 +640,7 @@ require('lazy').setup({
         vue_ls = {},
 
         -- phpactor = {},
+        intelephense = {},
 
         lua_ls = {
           -- cmd = { ... },
